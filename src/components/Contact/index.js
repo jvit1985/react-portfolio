@@ -32,7 +32,10 @@ function Contact() {
     }
     return (
         <section>
-            <h1 data-testid="h1tag">Contact Me</h1>
+            <div className="center">
+                <h2 className="page-header">Contact Me</h2>
+            </div>
+            <div>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -53,6 +56,7 @@ function Contact() {
                 </div>
                 <button data-testid="button" type="submit">Submit</button>
             </form>
+            </div>
         </section>
     );
 }

@@ -1,65 +1,44 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
-import Projects from './components/Projects';
+import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 import './App.css';
+import Portfolio from './components/Portfolio';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  const [currentTab, setCurrentTab] = useState('about');
 
-  const [categories] = useState([
-    {
-      name: 'Project 1',
-      description: 'project 1 description'
-    },
-    {
-      name: 'project 2',
-      description: 'project 2 description'
-    },
-    {
-      name: 'project 3',
-      description: 'project 3 description'
-    },
-    {
-      name: 'project 4',
-      description: 'project 4 description'
-    },
-    {
-      name: 'project 5',
-      description: 'project 5 description'
-    },
-    {
-      name: 'project 6',
-      description: 'project 6 description'
+  const renderTab = () => {
+    switch (currentTab) {
+      case "about":
+        return <About />
+      case "portfolio":
+        return <Portfolio />
+      case "contact":
+        return <Contact />
+      case "resume":
+        return <Resume />
+      default:
+        return <About />
     }
-  ]);
-
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  };
 
   return (
     <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        {!contactSelected ? (
-          <>
-            <Projects currentCategory={currentCategory}></Projects>
-            <About></About>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
-      </main>
+      <div className='mobile-header'>
+        <Header currentTab={currentTab} setCurrentTab={setCurrentTab}></Header>
+      </div>
+      <div>
+        <main>{renderTab()}</main>
+      </div>
+      <div>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
-
 
 export default App;
