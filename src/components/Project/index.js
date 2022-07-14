@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 
 function Project(props) {
-    const currentProject = useState(props[0].projects);
+    const currentProject = useState(props)[0].projects;
 
     const name = currentProject.name;
     const description = currentProject.description;

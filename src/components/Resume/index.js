@@ -7,12 +7,12 @@ function Resume() {
                 <h1 className="page-header">My Resume</h1>
             </div>
             <div className="bottom-spacing">
-                <a href={require('../../assets/files/resume Resume.pdf')} download>
+                <a href={require('../../assets/files/Justin Technical Resume.pdf')} download>
                     <h4>Download My Resume</h4>
                 </a>
             </div>
             <div>
-                <h5>Technologies</h5>
+                <h5>Proficiencies</h5>
                 <ol>
                     <li>HTML</li>
                     <li>CSS</li>

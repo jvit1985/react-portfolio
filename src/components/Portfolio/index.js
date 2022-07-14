@@ -1,73 +1,89 @@
 import React from "react";
-import Project from "../Projects";
+import Project from "../Project";
 
 function Portfolio() {
     const projects = [
         {
-            name: 'Project 1',
-            description: 'Project 1 description',
-            image: 'project-1.png',
+            name: 'Budget Tracker',
+            description: 'An app to track your income and expenses that utilizes IndexedDB to store transactions while offline',
+            image: 'budget-tracker.jpg',
             technologies: [
                 'HTML/CSS',
                 'Javascript',
+                'Node',
+                'Express',
+                'MongoDB',
+                'IndexedDB',
             ],
-            github: 'Project 1 github link',
-            deployed: 'Project 1 deployed link',
+            github: 'https://github.com/jvit1985/budget-tracker',
+            deployed: 'https://warm-reef-32239.herokuapp.com',
         },
         {
-            name: 'Project 2',
-            description: 'Project 2 description',
-            image: 'project-2.png',
+            name: 'Huntsmen',
+            description: 'A social media site for outdoor enthusiasts to connect, as well as a place to locate state parks by state abbreviation',
+            image: 'huntsmen.jpg',
             technologies: [
                 'HTML/CSS',
                 'Javascript',
+                'Node',
+                'MongoDB',
+                'RESTAPI',
+                'MVC',
             ],
-            github: 'Project 2 github link',
-            deployed: 'Project 2 deployed link',
+            github: 'https://github.com/jvit1985/huntsmen',
+            deployed: 'https://huntsmen.herokuapp.com/',
         },
         {
-            name: 'Project 3',
-            description: 'Project 3 description',
-            image: 'project-3.png',
+            name: 'Tech Blog',
+            description: 'A tech blog that allows users to post, react, and view other users posts as well as login and sign up based on if their a returning or new user',
+            image: 'tech-blog.jpg',
             technologies: [
                 'HTML/CSS',
                 'Javascript',
+                'Node',
+                'MongoDB',
             ],
-            github: 'Project 3 github link',
-            deployed: 'Project 3 deployed link',
+            github: 'https://github.com/jvit1985/tech-blog',
+            deployed: 'https://guarded-garden-41223.herokuapp.com/',
         },
         {
-            name: 'Project 4',
-            description: 'Project 4 description',
-            image: 'project-4.png',
+            name: 'The Trending Ape',
+            description: 'An site that allows users to search for stocks by ticker name and compares the trending stocks on reddit with actual stock performance',
+            image: 'trending-ape.jpg',
             technologies: [
                 'HTML/CSS',
                 'Javascript',
+                'Bulma',
+                'Server-side APIs'
             ],
-            github: 'Project 4 github link',
-            deployed: 'Project 4 deployed link',
+            github: 'https://github.com/jvit1985/trending-ape',
+            deployed: 'https://samborski55.github.io/smu-bootcamp-group-project-one/',
         },
         {
-            name: 'Project 5',
-            description: 'Project 5 description',
-            image: 'project-5.png',
+            name: 'Know The Weather',
+            description: 'A site that lets users search by city to get the current weather and 5 day forecast for that city and saves the city for the user as a clickable link',
+            image: 'know-the-weather.jpg',
             technologies: [
                 'HTML/CSS',
                 'Javascript',
+                'Bootstrap',
+                '3rd party APIs',
             ],
-            github: 'Project 5 github link',
-            deployed: 'Project 5 deployed link',
+            github: 'https://github.com/jvit1985/know-the-weather',
+            deployed: 'https://jvit1985.github.io/know-the-weather/',
         },
         {
-            name: 'Project 6',
-            description: 'Project 6 description',
-            image: 'project-6.png',
+            name: 'Work Day Scheduler',
+            description: 'A site to set up your work day schedule in real time, can edit, delete, and save tasks.',
+            image: 'work-day-scheduler.jpg',
             technologies: [
                 'HTML/CSS',
                 'Javascript',
+                'Bootstrap',
+                'jQuery'
             ],
-            github: 'Project 6 github link',
-            deployed: 'Project 6 deployed link',
+            github: 'https://github.com/jvit1985/work-day-scheduler',
+            deployed: 'https://jvit1985.github.io/work-day-scheduler/',
         },   
     ];
 
@@ -77,7 +93,7 @@ function Portfolio() {
                 <h1 className="page-header">My Portfolio</h1>
             </div>
             <div>
-                <ul className="flex-row mobile-row">
+                <ul className="flex-row">
                     <li className="padding">
                         <Project projects={projects[0]}></Project>
                     </li>
@@ -85,7 +101,7 @@ function Portfolio() {
                         <Project projects={projects[1]}></Project>
                     </li>
                 </ul>
-                <ul className="flex-row mobile-row">
+                <ul className="flex-row">
                     <li className="padding">
                         <Project projects={projects[2]}></Project>
                     </li>
@@ -93,7 +109,7 @@ function Portfolio() {
                         <Project projects={projects[3]}></Project>
                     </li>
                 </ul>
-                <ul className="flex-row mobile-row">
+                <ul className="flex-row">
                     <li className="padding">
                         <Project projects={projects[4]}></Project>
                     </li>

@@ -6,7 +6,6 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import './App.css';
-import Portfolio from './components/Portfolio';
 
 function App() {
   const [currentTab, setCurrentTab] = useState('about');

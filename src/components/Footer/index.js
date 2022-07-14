@@ -5,13 +5,19 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <div>
-                <a href="https://github.com/jvit1985.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/jvit1985">
+                    <img src={require('../../assets/logos/github-logo.png')} alt='Github' className='logo'></img>
+                </a>
                 </div>
                 <div>
-                <a href="https://Linkedin.com/in/justin-vititoe-a577b461" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/justin-vititoe-a557b461/">
+                    <img src={require('../../assets/logos/linkedin-logo.png')} alt="LinkedIn" className='logo'></img>
+                </a>
                 </div>
                 <div>
-                <a href="https://twitter.com/JVititoe" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/JVititoe">
+                    <img src={require('../../assets/logos/twitter-logo.png')} alt="Twitter" className="logo"></img>
+                </a>
                 </div>
             </footer>
         )
