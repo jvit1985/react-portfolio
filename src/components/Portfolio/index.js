@@ -4,6 +4,23 @@ import Project from "../Project";
 function Portfolio() {
     const projects = [
         {
+            name: 'List Hub',
+            description: 'An e-commerce store that allows users to upload their own products to sell and purchase other products and checkout using Stripe',
+            image: 'List-Hub.jpg',
+            technologies: [
+                'HTML/CSS',
+                'Javascript',
+                'Node',
+                'Express',
+                'GraphQL',
+                'React',
+                'MongoDB',
+                'IndexedDB'
+            ],
+            github: 'https://github.com/TonyT504/list-hub',
+            deployed: 'https://stormy-ravine-51670.herokuapp.com/',
+        },
+        {
             name: 'Budget Tracker',
             description: 'An app to track your income and expenses that utilizes IndexedDB to store transactions while offline',
             image: 'budget-tracker.jpg',
@@ -72,19 +89,6 @@ function Portfolio() {
             github: 'https://github.com/jvit1985/know-the-weather',
             deployed: 'https://jvit1985.github.io/know-the-weather/',
         },
-        {
-            name: 'Work Day Scheduler',
-            description: 'A site to set up your work day schedule in real time, can edit, delete, and save tasks.',
-            image: 'work-day-scheduler.jpg',
-            technologies: [
-                'HTML/CSS',
-                'Javascript',
-                'Bootstrap',
-                'jQuery'
-            ],
-            github: 'https://github.com/jvit1985/work-day-scheduler',
-            deployed: 'https://jvit1985.github.io/work-day-scheduler/',
-        },   
     ];
 
     return (
