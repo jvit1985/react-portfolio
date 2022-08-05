@@ -15,7 +15,8 @@ function Portfolio() {
                 'MongoDB',
                 'IndexedDB',
                 'GraphQL',
-                'React'
+                'React',
+                'JSON Web Token'
             ],
             github: 'https://github.com/TonyT504/list-hub',
             deployed: 'https://stormy-ravine-51670.herokuapp.com/'
