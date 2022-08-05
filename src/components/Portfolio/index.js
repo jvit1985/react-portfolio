@@ -16,7 +16,8 @@ function Portfolio() {
                 'IndexedDB',
                 'GraphQL',
                 'React',
-                'JSON Web Token'
+                'JSON Web Token',
+                'Stripe'
             ],
             github: 'https://github.com/TonyT504/list-hub',
             deployed: 'https://stormy-ravine-51670.herokuapp.com/'
