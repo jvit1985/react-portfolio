@@ -67,7 +67,7 @@ function Portfolio() {
         },
         {
             name: 'The Trending Ape',
-            description: 'An site that allows users to search for stocks by ticker name and compares the trending stocks on reddit with actual stock performance',
+            description: 'A site that allows users to search for stocks by ticker name and compares the trending stocks on reddit with actual stock performance',
             image: 'trending-ape.jpg',
             technologies: [
                 'HTML/CSS',
@@ -99,7 +99,7 @@ function Portfolio() {
                 <h1 className="page-header">My Portfolio</h1>
             </div>
             <div>
-                <ul className="flex-row">
+                <ul className="flex-row center">
                     <li className="padding">
                         <Project projects={projects[0]}></Project>
                     </li>
@@ -107,7 +107,7 @@ function Portfolio() {
                         <Project projects={projects[1]}></Project>
                     </li>
                 </ul>
-                <ul className="flex-row">
+                <ul className="flex-row center">
                     <li className="padding">
                         <Project projects={projects[2]}></Project>
                     </li>
@@ -115,7 +115,7 @@ function Portfolio() {
                         <Project projects={projects[3]}></Project>
                     </li>
                 </ul>
-                <ul className="flex-row">
+                <ul className="flex-row center">
                     <li className="padding">
                         <Project projects={projects[4]}></Project>
                     </li>
