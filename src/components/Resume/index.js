@@ -32,8 +32,11 @@ function Resume() {
                     <li>NoSQL</li>
                     <li>GraphQL</li>
                     <li>MongoDB</li>
-                    <li>Mongoose</li>
                     <li>IndexedDB</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>AWS</li>
                 </ol>
             </div>
         </section>
