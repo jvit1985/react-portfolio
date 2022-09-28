@@ -14,11 +14,6 @@ class Footer extends Component {
                     <img src={require('../../assets/logos/linkedin-logo.png')} alt="LinkedIn" className='logo'></img>
                 </a>
                 </div>
-                <div>
-                <a href="https://twitter.com/JVititoe">
-                    <img src={require('../../assets/logos/twitter-logo.png')} alt="Twitter" className="logo"></img>
-                </a>
-                </div>
             </footer>
         )
     }
