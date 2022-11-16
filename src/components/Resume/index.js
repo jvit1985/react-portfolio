@@ -33,10 +33,8 @@ function Resume() {
                     <li>GraphQL</li>
                     <li>MongoDB</li>
                     <li>IndexedDB</li>
-                    <li>Python</li>
                     <li>Java</li>
                     <li>C#</li>
-                    <li>AWS</li>
                 </ol>
             </div>
         </section>

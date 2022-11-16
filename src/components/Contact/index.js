@@ -69,7 +69,7 @@ function Contact() {
                     <h4>Phone Number:</h4>
                     <a href='tel:6155790520'>615-579-0520</a>
                     <h4>Email:</h4>
-                    <a href="email:jvit85@gmail.com">jvit85@gmail</a>
+                    <a href="email:jvit85@gmail.com">jvit85@gmail.com</a>
                 </div>
             </form>
             </div>
